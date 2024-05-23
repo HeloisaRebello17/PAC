@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+body {
+    background-color: #FFF2D8;
+    font-family: "Open Sans", sans-serif;
+}
+
+.linha {
+    background: rgb(190, 228, 228);
+    background: linear-gradient(90deg, rgba(190, 228, 228, 1) 0%, rgba(190, 228, 228, 1) 10%, rgba(242, 204, 201, 1) 10%, rgba(242, 204, 201, 1) 20%, rgba(235, 222, 240, 1) 20%, rgba(235, 222, 240, 1) 30%, rgba(239, 196, 167, 1) 30%, rgba(239, 196, 167, 1) 30%, rgba(239, 196, 167, 1) 40%, rgba(190, 228, 228, 1) 40%, rgba(190, 228, 228, 1) 50%, rgba(242, 204, 201, 1) 50%, rgba(242, 204, 201, 1) 60%, rgba(235, 222, 240, 1) 60%, rgba(235, 222, 240, 1) 70%, rgba(239, 196, 167, 1) 70%, rgba(239, 196, 167, 1) 80%, rgba(190, 228, 228, 1) 80%, rgba(190, 228, 228, 1) 90%, rgba(242, 204, 201, 1) 90%);
+    height: 8px;
+    width: 100%;
+    margin: 0; /* Adicionado para remover margens */
+    padding: 0; /* Adicionado para remover preenchimentos */
+}
+hr{
+    margin-top: 30px;
+    height: 1px;
+    background-color: black
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin:19px;
+}
+
+h1{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BCE4E4;
+    margin-bottom:10px
+}
+h2{
+    margin-bottom:7px;
+    margin-top:20px;
+    color:#D5ECB4;
+}
+.algoritmo{
+    margin-top:10px
+}
+
+.code{
+    color:#F4CCC8;
+    font-size: 17px;
+    font-weight: bold;
+}
+.codigo{
+    margin-left:19px
+}
+.exemplo{
+    margin-top: 10px;
+}
+.exemplo_scanf{
+    margin-top: 30px;
+}
+.exercicios{
+    margin-left:19px;
+}
+.exercicios_lista{
+    margin-bottom:10px
+}
+.espacamento{
+    margin-bottom:10px;
+    margin-top:10px
+}

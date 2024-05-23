@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dia 3</h1>
+    <hr class="linha">
+    <div class="container">
+    <h2>Estrutura if-else</h2>
+    <p>A condicional <code>if</code> é uma estrutura condicional que executa a afirmação dentro do bloco se determinada condição for verdadeira. Se for falsa, executa as afirmações dentro de <code>else</code>.</p>
+
+    <h3 class="espacamento">Condição verdadeira (if)</h3>
+    <p>O comando <code>if</code> é utilizado para testar uma condição e executar um bloco de código caso essa condição seja verdadeira, podendo ser ele de múltiplas instruções.</p>
+    <pre>
+        if (numero > 0) {
+            printf("O número é positivo");
+        } 
+    </pre>
+    <p>Neste exemplo, a expressão <code>numero > 0</code> é avaliada como verdadeira, pois o valor da variável “numero” é maior que zero.</p>
+
+    <h3 class="espacamento">Condição falsa (else)</h3>
+    <p>Se a condição do <code>if</code> for falsa, é executado o código contido no <code>else</code>. Ele é opcional e sempre vem após o bloco de código do <code>if</code>.</p>
+    <pre>
+        if (numero > 0) {
+            printf("O número é positivo");
+        } else {
+            printf("O número é negativo");
+        }
+    </pre>
+    <p>Neste caso, como o valor da variável “numero” é negativo, a condição do <code>if</code> é avaliada como falsa e o bloco de código do <code>else</code> é executado. Portanto, a mensagem “O número é negativo” é exibida.</p>
+
+    <h2>Estrutura</h2>
+    <pre>
+        if([critério]){   
+            /* 
+            codificação (verdadeira); 
+            */ 
+        } else { 
+            /* 
+            codificação (falso); 
+            */ 
+        } 
+    </pre>
+
+    <h2>Tipos de operações</h2>
+    <ul class="codigo">
+        <li><code>&gt;</code> Maior que</li>
+        <li><code>&lt;</code> Menor que</li>
+        <li><code>==</code> Igual</li>
+        <li><code>!=</code> Diferente</li>
+        <li><code>&gt;=</code> Maior igual</li>
+        <li><code>&lt;=</code> Menor igual</li>
+    </ul>
+
+    <h2>Operações Lógicas</h2>
+    <ul class="codigo">
+        <li><code>&&</code> E lógico</li>
+        <li><code>||</code> Ou lógico</li>
+    </ul>
+
+    <p class="exemplo">
+        <strong>Exemplo:</strong><br>
+        </p>
+    <pre>
+        int numero = 10;
+
+        if (numero > 0) {
+            printf("O número é positivo");
+        } else if (numero < 0) {
+            printf("O número é negativo");
+        } else {
+            printf("O número é zero");
+        }
+    </pre>
+
+    <h2>Execução de exercícios (nível básico)</h2>
+    <ol class="exercicios">
+    
+    <li class="exercicios_lista">Escreva um programa para ler 2 valores (considere que não serão informados valores iguais) e escrever o maior deles.</li>
+    <li class="exercicios_lista">Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.</li>
+    <li class="exercicios_lista">Faça um programa que peça três notas de um aluno e calcule a média. Analisar a média e imprimir uma das mensagens a seguir:</li>
+    <ul class="codigo">
+        <li>A mensagem "Aprovado", se a média for maior ou igual a 7, com a respectiva média alcançada;</li>
+        <li>A mensagem "Reprovado", se a média for menor do que 7, com a respectiva média alcançada;</li>
+        <li>A mensagem "Aprovado com Distinção", se a média for igual a 10.</li>
+    </ul>
+    <li class="espacamento">Faça um programa que solicita a idade de uma pessoa e verifica se ela pode votar (idade >= 16).</li>
+    <li class="exercicios_lista">O IMC (índice de massa corpórea) indica o grau de obesidade de uma pessoa. Este índice é obtido pelo peso (em kg) dividido pelo quadrado da altura (em metros). A tabela a seguir apresenta as faixas deste índice:</li>
+    <table border="1">
+        <tr>
+            <th>IMC</th>
+            <th>Avaliação</th>
+        </tr>
+        <tr>
+            <td>&lt;20</td>
+            <td>Abaixo do normal</td>
+        </tr>
+        <tr>
+            <td>[20, 25[</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>[25, 30[</td>
+            <td>Sobrepeso</td>
+        </tr>
+        <tr>
+            <td>[30, 35[</td>
+            <td>Obesidade leve</td>
+        </tr>
+        <tr>
+            <td>[35, 40[</td>
+            <td>Obesidade moderada</td>
+        </tr>
+        <tr>
+            <td>&gt;40</td>
+            <td>Obesidade mórbida</td>
+        </tr>
+    </table>
+    <p>Faça um programa que solicita o peso e a altura de uma pessoa, calcule o IMC, apresente o seu valor e a avaliação.</p>
+
+    <li class="espacamento">Faça um programa que peça um número e se este número for par, transforme-o em ímpar e vice-versa.</li>
+    <li class="espacamento">As organizações CSM resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes:</li>
+    <ul class="codigo">
+        <li>Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:</li>
+        <li>Salários até R$ 280,00 (incluindo): aumento de 20%;</li>
+        <li>Salários entre R$ 280,00 e R$700,00: aumento de 15%;</li>
+        <li>Salários entre R$ 700,00 e R$ 1500,00: aumento de 10%;</li>
+        <li>Salários de R$ 1500,00 em diante: aumento de 5%</li>
+    </ul>
+    <p><strong>Após o aumento ser realizado, informe na tela:</strong></p>
+    <ul class="codigo">
+        <li>O salário antes do reajuste;</li>
+        <li>b. O percentual de aumento aplicado;</li>
+        <li>c. O valor do aumento;</li>
+        <li>d. O novo salário, após o aumento.</li>
+    </ul>
+    <li class="espacamento">Faça um programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é:</li>
+    <ul class="codigo">
+        <li>Triângulo Equilátero: três lados iguais;</li>
+        <li>Triângulo Isósceles: quaisquer dois lados iguais;</li>
+        <li>Triângulo Escaleno: três lados diferentes.</li>
+    </ul>
+    <p>Dicas: Três lados formam um triângulo quando a soma de quaisquer dos dois lados é maior que o terceiro.</p>
+
+    <li class="espacamento">Faça um programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N-Noturno. Imprima a mensagem Bom Dia!, Boa Tarde! ou Boa Noite! ou Valor Inválido!, conforme o caso.</li>
+    <li class="exercicios_lista">Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.</li>
+    <li class="exercicios_lista">Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:</li>
+    <ul class="codigo">
+        <li>Par ou ímpar;</li>
+        <li>Positivo ou negativo;</li>
+    </ul>
+
+    <li class="espacamento">Um posto está vendendo combustíveis com a seguinte tabela de descontos:</li>
+    <p>Álcool:</p>
+    <ul class="codigo">
+        <li>Até 20 litros: desconto de 3% por litro;</li>
+        <li>Acima de 20 litros: Desconto de 5% por litro.</li>
+    </ul>
+    <p>Gasolina:</p>
+    <ul class="codigo">
+        <li>Até 20 litros: desconto de 4% por litro;</li>
+        <li>Acima de 20 litros: desconto de 6% por litro.</li>
+    </ul>
+    <p>Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente.</p>
+
+    <li class="espacamento">Faça um programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.</li>
+    <li class="exercicios_lista">Faça um programa que leia a idade de quatro alunos e apresente a mensagem conforme instruções:</li>
+    <ul class="codigo">
+        <li>a) Se a média de idade dos alunos é inferior a 25, apresentar a mensagem "Turma Jovem";</li>
+        <li>b) Se a média de idade dos alunos é entre 25 e 40, apresentar a mensagem "Turma Adulta";</li>
+        <li>c) Se a média de idade dos alunos é acima de 40 anos, apresentar a mensagem "Turma Idosa".</li>
+    </ul>
+    <li class="espacamento">Faça um programa que leia três números e mostre-os em ordem decrescente.</li>
+</ol>
+</div>
+</body>
+</html>

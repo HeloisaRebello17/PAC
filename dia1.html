@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dia 1</h1>
+    <hr>
+    <div class="container">
+    <section>
+        <h2>Origem e História</h2>
+        <p>No final dos anos 60, os Laboratórios Bell estavam envolvidos no desenvolvimento do projeto Multics, mas logo perceberam que o projeto era excessivamente caro e levaria muito tempo para produzir resultados concretos. Como alternativa, buscaram outras formas de criar um ambiente de computação eficiente e acessível. Em 1972, Dennis Ritchie, também nos Laboratórios Bell, desenvolveu a primeira versão da linguagem de programação C. O objetivo era incluí-la como um dos softwares distribuídos juntamente com o sistema operacional Unix, utilizado no computador PDP-11.</p>
+        <p>Para remediar a falta de padrão da linguagem C, o ANSI (American National Standards Institute) estabeleceu, em 1983, um comitê para criar um padrão definitivo da linguagem C.</p>
+    </section>
+    <section>
+        <h2>Características da Linguagem</h2>
+        <p>Uma linguagem de programação é o componente que controla o comportamento físico (hardware) e lógico (sistema operacional) de um computador. Elas são divididas em níveis: o nível baixo é mais próximo da linguagem da máquina (hardware), utilizando simbologias binárias (0 e 1); as linguagens de alto nível são mais próximas da linguagem humana, sendo relativamente fáceis de ler e escrever, e possuem uma maior concentração de códigos e instruções, proporcionando maior produtividade ao programador.</p>
+        <p>A linguagem C é considerada de médio nível, pois combina elementos das linguagens de alto nível com a funcionalidade das linguagens de baixo nível. Com C, é possível ter um controle exato de como um programa se comporta e acessar diretamente partes do hardware, como a memória do computador.</p>
+        <p>C é uma linguagem estruturada que facilita a interatividade com o sistema operacional. Além disso, a maioria dos erros de sintaxe é detectada pelo compilador, minimizando a chance de erros comprometerem o programa.</p>
+    </section>
+    <section>
+        <h2>Lógica de Programação</h2>
+        <p>É o conjunto de regras e técnicas que os programadores utilizam para projetar e desenvolver programas de computador. Consiste na habilidade de pensar de forma lógica e estruturada, decompondo problemas complexos em etapas mais simples.</p>
+        <p>Um modo de lógica é uma receita que consiste em passos, como itens utilizados, tempo de preparo, etc. que trazem um resultado final lógico. Exemplo: preparo de um café.</p>
+    <pre class="algoritmo">
+InícioAlgoritmo
+1 - Pegar uma vasilha com água
+2 - Levar ao fogo até ferver
+3 - Acrescentar o açúcar na água
+4 - Pegar o bule e o coador
+5 - Colocar o pó na medida desejada no coador
+6 - Despejar água fervente no mesmo
+7 - Após coar todo o café, retirar o coador
+8 - Pegar uma caneca para café
+9 - Despejar o café na caneca
+10 - Beber
+FimAlgoritmo
+     </pre>
+    </section>
+    <section>
+        <h2>Mostrar Desenvolvimento de Ambiente (Dev)</h2>
+        <p>Para criar o projeto, você deve clicar em arquivo (File) no menu superior.</p>
+        <p>Clique em novo (New), depois em Project (Projeto).</p>
+        <p>Escolha Console Application.</p>
+        <p>Escolha C Project.</p>
+        <p>Defina um nome e salve o arquivo no diretório onde você desejar.</p>
+        <p>Para criar um programa-fonte, clique com o botão direito sobre o nome do projeto e selecione "Novo Arquivo". Isto cria um arquivo vazio e o insere no projeto. Pressione CTRL-S e salve o arquivo recém-criado com o nome que você desejar. Lembre-se de colocar a extensão .c ou .cpp no final do nome do arquivo.</p>
+        <p>Para compilar e executar o programa, clique no botão de compilação.</p>
+    </section>
+    <section>
+        <h2>Sintaxe Básica</h2>
+        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(void) {
+    printf("Oi!!");
+    return 0;
+}
+        </pre>
+        <p><code class="code">#include &lt;stdio.h&gt;</code> e <code class="code">#include &lt;stdlib.h&gt;</code>: São bibliotecas externas que contêm declarações de funções úteis para entrada e saída de dados, além de outras utilidades.</p>
+        <p><code class="code">int main(void)</code>: Declara a função principal do programa, que retorna um inteiro ao sistema operacional.</p>
+        <p><code class="code">printf()</code>: Utilizado para imprimir qualquer valor na tela.</p>
+        <p><code class="code">return 0</code>: Indica que o programa foi executado com sucesso. Qualquer valor diferente de zero indica que houve um erro durante a execução.</p>
+    </section>
+</div>
+</body>
+</html>

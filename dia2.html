@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dia 2</h1>
+    <hr class="linha">
+    <div class="container">
+    <h2>Entrada e Saída (printf() e scanf())</h2>
+    <p>
+        <strong>printf():</strong> Imprime texto na tela.<br>
+        <p class="exemplo">
+        <strong>Exemplo:</strong><br>
+        </p>
+        <code>
+            #include &lt;stdio.h&gt;<br>
+            #include &lt;conio.h&gt;<br>
+            int main(void) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Oi!!\n");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Tudo bem?");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;getch();<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+            }
+        </code>
+    </p>
+    <ul class="codigo">
+        <li><code>\n</code>: Pular linha</li>
+        <li><code>\t</code>: Tabulação</li>
+        <li><code>getch()</code>: Espera que o usuário digite uma tecla e retorna este caractere.</li>
+        <li><code>//</code>: Comentário na linha</li>
+        <li><code>/* */</code>: Comentário que utiliza mais de uma linha</li>
+    </ul>
+
+    <h2>Variáveis</h2>
+    <p>Uma variável é uma posição de memória que pode ser identificada através de um nome.</p>
+
+    <h2>Tipos de Variáveis</h2>
+    <p>Todas as variáveis em C têm um tipo. Cada tipo define os valores que a variável pode armazenar. Todas as variáveis devem ser declaradas antes de serem usadas.</p>
+    <ul class="codigo">
+        <li><code>int</code>: Números inteiros (-1, 1)</li>
+        <li><code>float</code>: Números reais (1.2)</li>
+        <li><code>char</code>: Caractere (a, b)</li>
+        <li><code>string</code>: Frase ("Oi, tudo bem?")</li>
+    </ul>
+
+   <p class="exemplo"><strong>Exemplo:</strong><br></p> 
+    <pre>
+int main(void) {
+    // Variáveis
+    int idade = 18;
+    float altura = 1.60;
+    char nome[] = "Ana Pedrozo";
+
+    printf("Seu nome é %s\n", nome);
+    printf("Sua idade é %i\n", idade);
+    printf("Sua altura é %.2f\n", altura);
+    getch();
+
+    return 0;
+}
+    </pre>
+
+   
+    <ul class="codigo">
+        <li><code>%c</code>: Char</li>
+        <li><code>%f</code>: Float</li>
+        <li><code>%i</code>: Int</li>
+        <li><code>%s</code>: String</li>
+    </ul>
+    <hr>
+    <p>
+        <p class="exemplo_scanf">
+        <strong>scanf():</strong> Recebe entrada de dados do usuário.<br>
+    </p>
+    <p class="exemplo">  <strong>Exemplo:</strong><br> </p>
+        <code>
+#include &lt;stdio.h&gt;<br>
+#include &lt;conio.h&gt;<br>
+int main(void) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int idade;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float altura;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;char nome[50];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Digite sua idade: ");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &idade);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Digite sua altura: ");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;scanf("%f", &altura);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Digite seu nome: ");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;scanf("%s", nome);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Seu nome é %s\n", nome);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Sua idade é %d\n", idade);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Sua altura é %.2f\n", altura);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;getch();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+}
+        </code>
+    </p>
+
+    <p>
+        <h2>Operações Matemáticas:</h2>
+        <ul class="codigo">
+            <li><strong>+</strong>: Soma</li>
+            <li><strong>-</strong>: Subtração</li>
+            <li><strong>*</strong>: Multiplicação</li>
+            <li><strong>/</strong>: Divisão</li>
+            <li><strong>%</strong>: Módulo (Resto da divisão)</li>
+        </ul>
+        <p class="exemplo">
+        <strong>Exemplo:</strong><br>
+        </p>
+        <code>
+            #include &lt;stdio.h&gt;<br>
+            #include &lt;conio.h&gt;<br>
+            int main(void) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;int num1 = 10, num2 = 3;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;float resultado;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;resultado = num1 + num2;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Soma: %d\n", resultado);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;resultado = num1 - num2;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Subtração: %d\n", resultado);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;resultado = num1 * num2;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Multiplicação: %d\n", resultado);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;resultado = num1 / num2;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Divisão: %.2f\n", resultado);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;resultado = num1 % num2;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("Módulo: %d\n", resultado);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;getch();<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+            }
+        </code>
+    </p>
+    <p>
+        <h2>Exercícios:</h2>
+        <ol class="exercicios">
+            <li class="exercicios_lista">Elabore um programa que pede seu nome, endereço, CEP e telefone. Ele deve imprimir seu nome completo na primeira linha, seu endereço na segunda, e o CEP e telefone na terceira.</li>
+            <li class="exercicios_lista">Elabore um programa que mostre o seguinte menu na tela:<br>
+                <em>Cadastro de Clientes<br>
+                0 - Fim<br>
+                1 - Inclui<br>
+                2 - Altera<br>
+                3 - Exclui<br>
+                4 - Consulta<br>
+                Opção:</em>
+            </li>
+            <li class="exercicios_lista">Escreva um programa que produza a seguinte saída na tela:</li>
+            <pre>
+                ALUNO(A)          NOTA
+                =========         =====
+                ALINE              9.0  
+                MÁRIO              DEZ
+                SÉRGIO             4.5    
+                SHIRLEY            7.0
+            </pre>
+            <li class="exercicios_lista">Faça um programa em C que pergunte um valor em metros e imprima o correspondente em centímetros.</li>
+            <li class="exercicios_lista">Faça um programa em C que solicite 2 números e informe:</li>
+            <ul class="codigo">
+                <li>a) A soma dos números;</li>
+                <li>b) O produto do primeiro número pelo quadrado do segundo;</li>
+                <li>c) O quadrado do primeiro número;</li>
+            </ul>
+            <li class="espacamento">Construa um programa que calcule a área de um círculo.</li>
+            <li class="exercicios_lista">Construa um programa que peça 4 notas binárias e mostre a média.</li>
+        </ol>
+    </p>
+</div>
+</body>
+</html>
